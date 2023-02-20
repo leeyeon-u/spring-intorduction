@@ -45,7 +45,7 @@ class MemoryMemberRepositoryTest {
         assertThat(result).isEqualTo(member1);
     }
     @Test
-    public void findAll(){
+    public void findAll() {
         Member member1 = new Member();
         member1.setName("spring1");
         repository.save(member1);
@@ -56,7 +56,6 @@ class MemoryMemberRepositoryTest {
 
         List<Member> result = repository.findAll();
         assertThat(result.size()).isEqualTo(2);
-
     }
 }
 
